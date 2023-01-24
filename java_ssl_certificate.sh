@@ -16,3 +16,6 @@ keytool -import -alias CertSecureServerCA -trustcacerts -file "C:\dev\code\Cert 
 keytool -delete -cacerts -alias "aliasToRemove" -storepass changeit
 
 keytool -v -list -cacerts -storepass changeit
+
+
+#in case of issues run java with -Djavax.net.debug=ssl,handshake
